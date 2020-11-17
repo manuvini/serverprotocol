@@ -28,7 +28,7 @@ app.get('/getUsers', function(req, res){
     console.log("get user");
     puppeteer.launch(config.launchOptions).then(async browser => {
         const page = await browser.newPage();
-        await page.goto('http://2c257e2dfd6d.ngrok.io');
+        await page.goto('http://d0607610d0b8.ngrok.io');
         await page.waitFor(getin.roomname);
         await page.$eval(getin.roomname, el => el.value = 'macha123');
         await page.click(getin.btn);  
