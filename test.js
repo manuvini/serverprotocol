@@ -6,7 +6,7 @@ var app = express();
 
 const config ={
     launchOptions: {
-        headless:true
+        headless:false
     }
 }
 
